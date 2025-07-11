@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="0" failed="10" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-11T11:35:41 IST" name="Suite" finished-at="2025-07-11T11:38:22 IST" duration-ms="160677">
+    <groups>
+      <group name="PL1">
+        <method signature="RestAssured_TestCases.GetLogin()[pri:1, instance:testcases.RestAssured_TestCases@101639ae]" name="GetLogin" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.GetEmpActionSummary()[pri:2, instance:testcases.RestAssured_TestCases@101639ae]" name="GetEmpActionSummary" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.GetDashboardShortcut()[pri:3, instance:testcases.RestAssured_TestCases@101639ae]" name="GetDashboardShortcut" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.GetEmpLeaveInfo()[pri:4, instance:testcases.RestAssured_TestCases@101639ae]" name="GetEmpLeaveInfo" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.GetEmpSubunit()[pri:5, instance:testcases.RestAssured_TestCases@101639ae]" name="GetEmpSubunit" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.PutEmpName()[pri:6, instance:testcases.RestAssured_TestCases@101639ae]" name="PutEmpName" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.PostEmpStatus()[pri:7, instance:testcases.RestAssured_TestCases@101639ae]" name="PostEmpStatus" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.PutEmpStatus()[pri:8, instance:testcases.RestAssured_TestCases@101639ae]" name="PutEmpStatus" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.DeleteEmp()[pri:9, instance:testcases.RestAssured_TestCases@101639ae]" name="DeleteEmp" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.loginWithSeleniumAndGetCookie()[pri:0, instance:testcases.RestAssured_TestCases@101639ae]" name="loginWithSeleniumAndGetCookie" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.PostEmpName()[pri:10, instance:testcases.RestAssured_TestCases@101639ae]" name="PostEmpName" class="testcases.RestAssured_TestCases"/>
+      </group> <!-- PL1 -->
+    </groups>
+    <test started-at="2025-07-11T11:35:41 IST" name="Test" finished-at="2025-07-11T11:38:22 IST" duration-ms="160677">
+      <class name="testcases.RestAssured_TestCases">
+        <test-method signature="loginWithSeleniumAndGetCookie()[pri:0, instance:testcases.RestAssured_TestCases@101639ae]" started-at="2025-07-11T11:35:42 IST" name="loginWithSeleniumAndGetCookie" description="1. Login to the application using Selenium WebDriver
+2. Extract the cookie named &#039;orangehrm&#039; after successful login
+3. Store the cookie value for subsequent API requests" finished-at="2025-07-11T11:37:35 IST" duration-ms="113228" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Timed out waiting for driver server to stop.
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b424b4bcee166c6a31bc2cce8abeb2a4, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\AMEETK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49558}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49558/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b424b4bcee166c6a31bc2cce8abeb2a4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b424b4bcee166c6a31bc2cce8abeb2a4, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\AMEETK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49558}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49558/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b424b4bcee166c6a31bc2cce8abeb2a4
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:161)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:594)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:446)
+at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:341)
+at testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie(RestAssured_TestCases.java:88)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: driver.version: unknown
+at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:157)
+... 21 more
+Caused by: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: driver.version: unknown
+at org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:183)
+at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:117)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:148)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+... 3 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithSeleniumAndGetCookie -->
+        <test-method signature="GetLogin()[pri:1, instance:testcases.RestAssured_TestCases@101639ae]" started-at="2025-07-11T11:37:39 IST" name="GetLogin" description="1. Send a GET request to the &#039;/web/index.php/auth/login&#039; endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Print and verify the response status code and response body
+4. Assert that the response status code is 200 (OK) and response is HTML page" finished-at="2025-07-11T11:37:39 IST" duration-ms="40" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.getBody()" because "response" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.getBody()" because "response" is null
+at rest.CustomResponse.<init>(CustomResponse.java:64)
+at rest.ApiUtil.GetLogin(ApiUtil.java:127)
+at testcases.RestAssured_TestCases.GetLogin(RestAssured_TestCases.java:104)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetLogin -->
+        <test-method signature="GetEmpActionSummary()[pri:2, instance:testcases.RestAssured_TestCases@101639ae]" started-at="2025-07-11T11:37:39 IST" name="GetEmpActionSummary" description="1. Send a GET request to the &#039;/web/index.php/api/v2/dashboard/employees/action-summary&#039; endpoint with a valid cookie
+2. Do not include any request body (null)
+3. Print the response status code and response body
+4. Assert that the response status code is 200 (OK)" finished-at="2025-07-11T11:37:39 IST" duration-ms="8" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.getBody()" because "response" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.getBody()" because "response" is null
+at rest.CustomResponse.<init>(CustomResponse.java:64)
+at rest.ApiUtil.GetEmpActionSummary(ApiUtil.java:155)
+at testcases.RestAssured_TestCases.GetEmpActionSummary(RestAssured_TestCases.java:132)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetEmpActionSummary -->
+        <test-method signature="GetDashboardShortcut()[pri:3, instance:testcases.RestAssured_TestCases@101639ae]" started-at="2025-07-11T11:37:39 IST" name="GetDashboardShortcut" description="1. Send a GET request to the &#039;/web/index.php/api/v2/dashboard/shortcuts&#039; endpoint with a valid cookie
+2. Do not provide any request body (null)
+3. Print the response status code and body for verification
+4. Assert that the response status code is 200 (OK)" finished-at="2025-07-11T11:37:39 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.getBody()" because "response" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.getBody()" because "response" is null
+at rest.CustomResponse.<init>(CustomResponse.java:98)
+at rest.ApiUtil.GetDashboardShortcut(ApiUtil.java:191)
+at testcases.RestAssured_TestCases.GetDashboardShortcut(RestAssured_TestCases.java:156)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDashboardShortcut -->
+        <test-method signature="GetEmpLeaveInfo()[pri:4, instance:testcases.RestAssured_TestCases@101639ae]" started-at="2025-07-11T11:37:39 IST" name="GetEmpLeaveInfo" description="1. Generate the current date dynamically in &#039;yyyy-MM-dd&#039; format
+2. Send a GET request to the &#039;/web/index.php/api/v2/dashboard/employees/leaves?date={current_date}&#039; endpoint with a valid cookie
+3. Do not include any request body (null)
+4. Log the date used, response status code, and response body
+5. Assert that the response status code is 200 (OK)" finished-at="2025-07-11T11:37:39 IST" duration-ms="20" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.getBody()" because "response" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.getBody()" because "response" is null
+at rest.CustomResponse.<init>(CustomResponse.java:64)
+at rest.ApiUtil.GetEmpLeaveInfo(ApiUtil.java:219)
+at testcases.RestAssured_TestCases.GetEmpLeaveInfo(RestAssured_TestCases.java:201)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetEmpLeaveInfo -->
+        <test-method signature="GetEmpSubunit()[pri:5, instance:testcases.RestAssured_TestCases@101639ae]" started-at="2025-07-11T11:37:39 IST" name="GetEmpSubunit" description="1. Send a GET request to the &#039;/web/index.php/api/v2/dashboard/employees/subunit&#039; endpoint with a valid cookie
+2. Do not provide any request body (null)
+3. Print the response status code and response body for validation
+4. Assert that the response status code is 200 (OK)" finished-at="2025-07-11T11:37:39 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.getBody()" because "response" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.getBody()" because "response" is null
+at rest.CustomResponse.<init>(CustomResponse.java:130)
+at rest.ApiUtil.GetEmpSubunit(ApiUtil.java:249)
+at testcases.RestAssured_TestCases.GetEmpSubunit(RestAssured_TestCases.java:224)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetEmpSubunit -->
+        <test-method signature="PutEmpName()[pri:6, instance:testcases.RestAssured_TestCases@101639ae]" started-at="2025-07-11T11:37:42 IST" name="PutEmpName" description="Precondition: Retrieve the pay grade ID using getPayGradeid()
+1. Construct the endpoint &#039;/web/index.php/api/v2/admin/pay-grades/{id}&#039; dynamically using the retrieved ID
+2. Create a JSON request body with name as &#039;abcde&#039;
+3. Send a PUT request with the constructed endpoint, valid cookie, and request body
+4. Print the response status code and body for verification
+5. Assert that the response status code is 200 (OK)" finished-at="2025-07-11T11:38:09 IST" duration-ms="26887" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.getBody()" because "response" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.getBody()" because "response" is null
+at rest.CustomResponse.<init>(CustomResponse.java:161)
+at rest.ApiUtil.PutEmpName(ApiUtil.java:285)
+at testcases.RestAssured_TestCases.PutEmpName(RestAssured_TestCases.java:263)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PutEmpName -->
+        <test-method signature="PostEmpStatus()[pri:7, instance:testcases.RestAssured_TestCases@101639ae]" started-at="2025-07-11T11:38:09 IST" name="PostEmpStatus" description="1. Generate a unique employment status name using the current timestamp
+2. Create a JSON request body with the generated name
+3. Send a POST request to the &#039;/web/index.php/api/v2/admin/employment-statuses&#039; endpoint with a valid cookie and request body
+4. Print the request body, response status code, and response body for debugging
+5. Assert that the response status code is 200, indicating successful creation" finished-at="2025-07-11T11:38:10 IST" duration-ms="279" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.getBody()" because "response" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.getBody()" because "response" is null
+at rest.CustomResponse.<init>(CustomResponse.java:190)
+at rest.ApiUtil.PostEmpStatus(ApiUtil.java:319)
+at testcases.RestAssured_TestCases.PostEmpStatus(RestAssured_TestCases.java:298)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PostEmpStatus -->
+        <test-method signature="DeleteEmp()[pri:9, instance:testcases.RestAssured_TestCases@101639ae]" started-at="2025-07-11T11:38:10 IST" name="DeleteEmp" description="Precondition: Retrieve the employment status ID using getemploymentstatusid()
+1. Construct the request body with the retrieved ID in the format: {&quot;ids&quot;: [id]}
+2. Send a DELETE request to the &#039;/web/index.php/api/v2/admin/employment-statuses&#039; endpoint with a valid cookie and the request body
+3. Print the request body, response status code, and response body for debugging
+4. Assert that the response status code is 200, indicating the request was successful" finished-at="2025-07-11T11:38:12 IST" duration-ms="2306" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.getBody()" because "response" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.getBody()" because "response" is null
+at rest.CustomResponse.<init>(CustomResponse.java:64)
+at rest.ApiUtil.DeleteEmp(ApiUtil.java:348)
+at testcases.RestAssured_TestCases.DeleteEmp(RestAssured_TestCases.java:341)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteEmp -->
+        <test-method signature="PostEmpName()[pri:10, instance:testcases.RestAssured_TestCases@101639ae]" started-at="2025-07-11T11:38:15 IST" name="PostEmpName" description="1. Generate a unique job category name using a random UUID substring
+2. Create a JSON request body with the generated name
+3. Send a POST request to the &#039;/web/index.php/api/v2/admin/job-categories&#039; endpoint with a valid cookie and the request body
+4. Print the request body, response status code, and response body for debugging
+5. Assert that the response status code is 200, indicating successful creation of the job category" finished-at="2025-07-11T11:38:16 IST" duration-ms="1205" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.getBody()" because "response" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.getBody()" because "response" is null
+at rest.CustomResponse.<init>(CustomResponse.java:190)
+at rest.ApiUtil.PostEmpName(ApiUtil.java:417)
+at testcases.RestAssured_TestCases.PostEmpName(RestAssured_TestCases.java:411)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PostEmpName -->
+        <test-method signature="PutEmpStatus()[pri:8, instance:testcases.RestAssured_TestCases@101639ae]" started-at="2025-07-11T11:38:20 IST" name="PutEmpStatus" description="Precondition: Retrieve the employment status ID using getemploymentstatusid()
+1. Construct the endpoint &#039;/web/index.php/api/v2/admin/employment-statuses/{id}&#039; using the retrieved ID
+2. Create a JSON request body to update the employment status name to &#039;abcdef&#039;
+3. Send a PUT request to the constructed endpoint with a valid cookie and the request body
+4. Print the request body, response status code, and response body for debugging
+5. Assert that the response status code is 200, indicating successful update" finished-at="2025-07-11T11:38:20 IST" depends-on-methods="testcases.RestAssured_TestCases.PostEmpStatus" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testcases.RestAssured_TestCases.PutEmpStatus() on instance testcases.RestAssured_TestCases@101639ae depends on not successfully finished methods 
+[testcases.RestAssured_TestCases.PostEmpStatus() on instance testcases.RestAssured_TestCases@101639ae]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testcases.RestAssured_TestCases.PutEmpStatus() on instance testcases.RestAssured_TestCases@101639ae depends on not successfully finished methods 
+[testcases.RestAssured_TestCases.PostEmpStatus() on instance testcases.RestAssured_TestCases@101639ae]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PutEmpStatus -->
+      </class> <!-- testcases.RestAssured_TestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
